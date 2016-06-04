@@ -4,6 +4,8 @@
 
 @import "./framework.scss";
 @import "./_modal.scss";
+@import "./_dropdown.scss";
+@import "./_shadow-mixin.scss";
 
 /* =================================
   Base Element Styles
@@ -111,10 +113,17 @@ h1 {
 
 .portfolio {
 	.portfolio-img {
-
 		img {
-			// height: 100px;
-			// width: 125px;
+			display: block;
+			margin: 0 auto;
+			@include shadow(3);
+			@include transition(all 250ms);
+			&:hover {
+				@include transform(translateY(-5px));
+			}
+		}
+		a {
+			cursor: default;
 		}
 	}
 }
@@ -135,71 +144,6 @@ span.codedirection {
 	unicode-bidi: bidi-override;
 	direction: rtl;
 }
-
-/* =================================
-  Dropdown
-==================================== */
-
-ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-}
-
-ul li {
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 15px 20px;
-  background: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-ul li:hover {
-  background: #B0BEC5;
-}
-
-ul li ul {
-  padding: 0;
-  position: absolute;
-  margin-top: 10px;
-  left: 0;
-  width: 150px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-ul li ul li {
-  background: #B0BEC5;
-  display: block;
-  color: #fff;
-}
-
-ul li ul li a:hover {
-	color: white;
-}
-
-ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
 
 /* =================================
   Clearfix
@@ -230,9 +174,6 @@ Media Queries
 
 @media (max-width: 650px) {
 	.portfolio {
-		.col-12 {
-
-		}
 		.col-6 {
 			width: 100%;
 		}
@@ -240,15 +181,11 @@ Media Queries
 			width: 50%;
 		}
 		.portfolio-img {
-
 			img {
-				// margin: 20px 20px 20px 50px;
-				// width: 75%;
-				// height: 50%;
+
 			}
 		}
 	}
-
 }
 
 @media (min-width: 769px) {
@@ -274,11 +211,6 @@ Media Queries
 		margin-top: 20px;
 		padding-left: 20px;
 	}
-
-	// .primary,
-	// .secondary {
-	// 	width: 50%;
-	// }
 
 	.intro {
 		float: left;
