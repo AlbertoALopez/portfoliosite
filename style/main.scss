@@ -1,4 +1,11 @@
 /* =================================
+	Imports
+==================================== */
+
+@import "./framework.scss";
+@import "./_modal.scss";
+
+/* =================================
   Base Element Styles
 ==================================== */
 
@@ -13,7 +20,6 @@ html,
 body {
 	width: 100%;
 	font-family: "pt-sans", sans-serif;
-
 }
 
 p {
@@ -89,7 +95,9 @@ h1 {
 
 /* Body */
 
-#about, #contact {
+#about,
+#contact,
+.portfolio {
 	padding: 0 20px 0 20px;
 }
 
@@ -101,6 +109,16 @@ h1 {
 	text-decoration: underline;
 }
 
+.portfolio {
+	.portfolio-img {
+
+		img {
+			// height: 100px;
+			// width: 125px;
+		}
+	}
+}
+
 /* =================================
   Color styles
 ==================================== */
@@ -110,7 +128,7 @@ h1 {
 }
 
 /* =================================
-	Code redirection
+	Email redirection
 ==================================== */
 
 span.codedirection {
@@ -147,6 +165,7 @@ ul li {
 ul li:hover {
   background: #B0BEC5;
 }
+
 ul li ul {
   padding: 0;
   position: absolute;
@@ -197,6 +216,7 @@ Media Queries
 ==================================== */
 
 @media (max-width: 400px ) {
+
 	.name {
 		font-size: 20px;
 	}
@@ -208,35 +228,71 @@ Media Queries
 	}
 }
 
+@media (max-width: 650px) {
+	.portfolio {
+		.col-12 {
+
+		}
+		.col-6 {
+			width: 100%;
+		}
+		.col-3 {
+			width: 50%;
+		}
+		.portfolio-img {
+
+			img {
+				// margin: 20px 20px 20px 50px;
+				// width: 75%;
+				// height: 50%;
+			}
+		}
+	}
+
+}
+
 @media (min-width: 769px) {
 
-.main-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
+	.main-header {
+	  position: fixed;
+	  width: 100%;
+	  top: 0;
+	}
+
+	.content {
+		padding-top: 70px;
+		// width: 100%;
+	}
+
+	.container {
+		// width: 90%;
+		margin: 0 auto;
+	}
+
+	.name,
+	.col {
+		margin-top: 20px;
+		padding-left: 20px;
+	}
+
+	// .primary,
+	// .secondary {
+	// 	width: 50%;
+	// }
+
+	.intro {
+		float: left;
+	}
 }
 
-.content {
-	padding-top: 70px;
-	width: 100%;
-}
-
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.name,
-.col {
-	margin-top: 20px;
-	padding-left: 20px;
-}
-
-.primary,
-.secondary {
-	width: 50%;
-}
-
-.intro {
-	float: left;
+@media (max-width: 850px) {
+	.content,
+	.contact {
+		.col-6 {
+			width: 100%;
+		}
+		.col-3 {
+			width: 50%;
+		}
+	}
 }
