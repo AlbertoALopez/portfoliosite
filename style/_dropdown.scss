@@ -25,7 +25,7 @@ ul li {
 }
 
 ul li:hover {
-  background: #B0BEC5;
+  background: $dropdown-background;
 }
 
 ul li ul {
@@ -33,7 +33,7 @@ ul li ul {
   position: absolute;
   margin-top: 10px;
   left: 0;
-  // width: 150px;
+  width: 150px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -47,7 +47,7 @@ ul li ul {
   -transition: opacity 0.2s;
 }
 ul li ul li {
-  background: #B0BEC5;
+  background: $dropdown-background;
   display: block;
   color: #fff;
 }

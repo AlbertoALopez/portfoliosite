@@ -1,6 +1,8 @@
 /* =================================
-	Imports
+	Modal
 ==================================== */
+
+@import "./_colors.scss";
 
 .modal {
   display: none;
@@ -60,7 +62,9 @@
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
+	background-color: $modal-background;
 }
+
 .modal-visible .modal-inner {
   z-index: 100;
   opacity: 1;
@@ -73,7 +77,7 @@ a[rel="modal:close"] {
   z-index: 2;
   right: 0;
   top: 0;
-  width: 25px;
+  width: 35px;
   height: 25px;
   line-height: 25px;
   font-size: 13px;
@@ -84,8 +88,27 @@ a[rel="modal:close"] {
 }
 
 .modal-item {
-	background-color: white;
-	width: 100px;
-	height: 100px;
 	display: block;
+	z-index: 2;
+	.modal-container {
+		display: inline;
+		font-size: 20px;
+		word-wrap: break-word;
+		.modal-column-left {
+			padding: 10px 20px 10px 20px;
+			a {
+				text-decoration: underline;
+			}
+		}
+		.modal-column-right {
+			img {
+				width: 100%;
+		    height: auto;
+				padding: 20px 20px 0px 20px;
+			}
+			iframe {
+				padding-top: 20px;
+			}
+		}
+	}
 }
