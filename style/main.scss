@@ -141,8 +141,9 @@ h1 {
   Color styles
 ==================================== */
 
-.about {
-	background-color: #90A4AE;
+.main-header,
+.main-header ul li {
+	background-color: $dropdown-background;
 }
 
 /* =================================
@@ -158,25 +159,48 @@ span.codedirection {
   Clearfix
 ==================================== */
 
-.clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
 
 /* =================================
 Media Queries
 ==================================== */
 
-@media (max-width: 400px ) {
-	.name {
-		font-size: 20px;
+@media (max-width: 350px) {
+	.nav {
+		h3 {
+			visibility: hidden;
+		}
 	}
-	.main-header {
-		height: 70px;
+	.portfolio-img {
+		img {
+			width: 250px;
+		}
+	}
+}
+
+@media (max-width: 410px) {
+	.name {
+		font-size: 17px;
 	}
 	.nav {
 		padding-right: 25px;
+	}
+}
+
+@media (max-width: 450px) {
+	.nav {
+		h3 {
+			margin-right: -20px;
+			font-size: 17px;
+		}
 	}
 }
 
@@ -200,11 +224,9 @@ Media Queries
 
 	.content {
 		padding-top: 70px;
-		// width: 100%;
 	}
 
 	.container {
-		// width: 90%;
 		margin: 0 auto;
 	}
 

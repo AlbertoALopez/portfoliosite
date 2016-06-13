@@ -5,6 +5,7 @@ import css from '../style/main.scss';
 Animate();
 
 const options = {
-	
+
 };
+
 const modal = new VanillaModal(options);
