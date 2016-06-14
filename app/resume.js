@@ -15,7 +15,7 @@ var jsonView = document.getElementById("jsonView");
 var resume =
 {
 	"downloadAsPDF": {
-		"url": "alberto-lopez-resume.pdf"
+		"url": "http://www.albertoalopez.co/alberto-lopez-resume.pdf"
 	},
   "basics": {
     "name": "Alberto A. Lopez",
