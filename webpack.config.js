@@ -15,15 +15,16 @@ const PATHS = {
 
 const common = {
 	entry: {
-		app: PATHS.app
+		app: PATHS.app,
+		resume: './app/resume.js'
 		// style: "./style/main.scss"
 	},
 	resolve: {
 		extensions: ['', '.js', '.scss']
 	},
 	output: {
-		path: path.resolve(__dirname + 'build'),
-	 	publicPath: '/build/',
+		path: path.join(__dirname + 'build'),
+	 	publicPath: '/build',
 		filename: 'bundle.js'
 	},
 	module: {
@@ -89,8 +90,8 @@ if (TARGET === 'build' || TARGET === 'stats') {
 		},
 		output: {
 			path: PATHS.build,
-			filename: '[name].[chunkhash].js',
-			chunkFilename: '[chunkhash].js'
+			filename: '[name].js',
+			// chunkFilename: '[chunkhash].js'
 		},
 		module: {
 			loaders: [{
@@ -110,7 +111,7 @@ if (TARGET === 'build' || TARGET === 'stats') {
 			new webpack.optimize.CommonsChunkPlugin({
 				names: ['vendor', 'manifest']
 			}),
-			new ExtractTextPlugin('[name].[chunkhash].css')
+			new ExtractTextPlugin('[name].css')
 		]
 	});
 }
