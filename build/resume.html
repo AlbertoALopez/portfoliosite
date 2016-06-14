@@ -7,43 +7,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alberto A Lopez</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-	<link rel="stylesheet" href="app.css">
-	<style type="text/css">
-		#dialog,
-		#jsonView {
-			font-size: 1.4em;
-		}
-		#jsonView {
-			margin: 20px 0 20px 20px;
-		}
-		.ui-button-text {
-			color: black;
-		}
-		.ui-widget-header {
-			background: black !important;
-			border: none;
-		}
-	</style>
+	<link rel="stylesheet" href="resume.css">
 </head>
 <body>
 
 	<div class="container">
-		<div class="col-12" id="jsonView">
+		<div class="grid">
+			<div class="row">
+				<div class="col-12">
+					<div id="jsonView">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="modal">
 		<div class="modal-inner">
 			<a rel="modal:close">Close</a>
-			<div class="modal-content"></div>
+				<div class="modal-content"></div>
 		</div>
 	</div>
 
-	<div id="modal-1" class="modal-hider">Modal 1 content</div>
-
+	<div id="modal-1" style="display:none" class="modal-hider">
+		<div class="modal-item">
+			<div class="modal-container">
+				<div class="grid">
+					<div class="row">
+						<div class="col-12 modal-column-left">
+							<p>View as JSON or click <a target="_blank" href="google.com">here</a> for PDF.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
-	<!-- <script src="../dist/modalpopup.js"></script> -->
+
+	<!-- Scripts -->
 	<script src="manifest.js"></script>
 	<script src="vendor.js"></script>
 	<script src="resume.js"></script>

@@ -1,6 +1,8 @@
 import VanillaModal from 'vanilla-modal';
-import modalcss from "../style/_modal.scss";
 import JSONFormatter from 'json-formatter-js';
+import framework from '../style/framework.scss';
+import modalcss from "../style/_modal.scss";
+import resumecss from "../style/_resume.scss";
 
 const options = {
 
@@ -19,10 +21,10 @@ var resume =
     "name": "Alberto A. Lopez",
     "label": "Developer",
     "picture": "",
-    "email": "albertolopez19@gmail.com",
+    "email": "me@albertoalopez.co",
     "phone": "(647) 703-6582",
     "website": "albertoalopez.ca",
-    "summary": "Alberto is a programmer, developer and tinkerer hailing from Toronto, Ontario. \n He has experience in automation, data visualization, web development, IoT development and project management. \n His non-work interests lie in analog electronics, music composition, and taking selfies with his cats.",
+    "summary": "Alberto is a programmer, developer and tinkerer hailing from Toronto, Ontario. \n He has experience in automation, data visualization, web development and project management. \n His non-work interests lie in analog electronics, songwriting, and taking selfies with his cats.",
     "location": {
       "address": "#1-668 Bathurst Street",
       "postalCode": "M5S 2R3",
@@ -42,7 +44,7 @@ var resume =
     {
       "company": "Freelance Web Developer",
       "position": "Self-employed",
-      "website": "albertoalopez.ca",
+      "website": "albertoalopez.co",
       "startDate": "2016-01-01",
       "endDate": "Present",
       "summary": "Freelance web developer.",
