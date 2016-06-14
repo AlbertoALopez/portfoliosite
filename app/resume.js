@@ -15,7 +15,7 @@ var jsonView = document.getElementById("jsonView");
 var resume =
 {
 	"downloadAsPDF": {
-		"url": "http://codepen.io/albertalopez/"
+		"url": "alberto-lopez-resume.pdf"
 	},
   "basics": {
     "name": "Alberto A. Lopez",
@@ -23,7 +23,7 @@ var resume =
     "picture": "",
     "email": "me@albertoalopez.co",
     "phone": "(647) 703-6582",
-    "website": "albertoalopez.ca",
+    "website": "www.albertoalopez.co",
     "summary": "Alberto is a programmer, developer and tinkerer hailing from Toronto, Ontario. \n He has experience in automation, data visualization, web development and project management. \n His non-work interests lie in analog electronics, songwriting, and taking selfies with his cats.",
     "location": {
       "address": "#1-668 Bathurst Street",
@@ -121,14 +121,15 @@ var resume =
       "name": "Recently used",
       "level": "",
       "keywords": [
-        "Javascript",
+        "JavaScript",
 				"Python",
 				"HTML5",
-				"CSS3",
+				"CSS3 and SASS",
 				"SQL",
 				"NodeJS",
-				"Apache",
-				"Nginx"
+				"nginx",
+				"ES6",
+				"Babel"
       ]
     },
     {
@@ -138,7 +139,8 @@ var resume =
         "jQuery",
 				"React/flux/redux",
 				"GSAP",
-				"Flask"
+				"Flask",
+				"Bootstrap 3"
       ]
     },
     {
@@ -150,7 +152,34 @@ var resume =
 				"Webpack",
 				"CLI tools",
 				"Linux/Windows/OSX",
-				"Arduino"
+				"Arduino",
+				"Apache",
+				"Git and Github"
+      ]
+		},
+		{
+      "name": "Concepts",
+      "level": "",
+      "keywords": [
+				 "MVC",
+				 "REST APIs",
+				 "OOP",
+				 "OLOO",
+				 "Agile/Lean",
+				 "Responsive design",
+				 "Version control"
+      ]
+		},
+		{
+      "name": "Learning",
+      "level": "",
+      "keywords": [
+				"Functional programming",
+				"UX and UI",
+				"Usability",
+				"SEO",
+				"Backend programming and server administration",
+				"OpenGL"
       ]
 		},
     {
