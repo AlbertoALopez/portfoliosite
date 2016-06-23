@@ -1,0 +1,61 @@
+/* =================================
+	Icon animation
+==================================== */
+
+@import "./_triangle-mixin.scss";
+
+.icon-slide {
+    position: relative;
+}
+
+.icon-slide::before,
+.icon-slide::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    content: "View profile";
+    -webkit-transition: left 0.3s;
+            transition: left 0.3s;
+     background-position: 0 0;
+}
+
+.icon-slide::before {
+    left: 0;
+    background-color: #595959;
+}
+
+.icon-slide::after {
+  left: -100%;
+}
+
+.icon-slide:hover::before {
+  left: 100%;
+}
+
+.icon-slide:hover::after {
+  left: 0;
+}
+
+.intro-button {
+    position: relative;
+    -webkit-transition: all .8s;
+          transition: all .8s;
+    height: 40px;
+    max-height: auto;
+    z-index: 1;
+    &:after {
+        @include triangle(
+          $direction : bottom,
+          $position  : top 100% right 40%,
+          $color     : $secondary-color
+        );
+    }
+    &:hover {
+      background-color: $secondary-color;
+      height: 80px;
+      overflow: visible;
+    }
+}

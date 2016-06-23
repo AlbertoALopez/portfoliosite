@@ -8,14 +8,14 @@
 	<title>Alberto A Lopez</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="app.css"> -->
+	<link rel="stylesheet" href="app.css">
 	<!-- <script>document.documentElement.className += ' wf-loading';</script> -->
 </head>
 <body>
 	<div id="wrapper">
 		<header class="main-header">
 			<div class="container">
-				<h1 class="name"><a href="#home">Alberto A. Lopez</h1></a>
+				<h1 class="name"><a class="scroll" href="#home">Alberto A. Lopez</h1></a>
 				<div class="nav">
 					<h3>Menu</h3>
 					<ul class="main-nav">
@@ -48,42 +48,44 @@
 		</header>
 
         <section class="intro-background">
-            <a class="anchor" id="home"></a>
             <div class="intro">
+                <a class="anchor anchor-intro" id="home"></a>
                 <img id="intro-img" src="img/alberto.jpg" width="123" height="123" alt="Alberto Lopez">
-                <p class="intro-text">I'm <strong>Alberto Lopez</strong>, a Toronto based web developer, musician and tinkerer.</p>
+                <p class="intro-text">I'm <strong>Alberto Lopez</strong>, a Toronto based web developer, musician and programmer.</p>
             </div>
+            <a class="scroll intro-button" id="intro-link" href="#about">View profile</a>
         </section>
+
 		<section class="content">
 			<div class="grid">
 				<div class="row">
 
-					<div class="col-6">
+					<div class="col-6 about">
                         <a class="anchor" id="about"></a>
 						<h3>About</h3>
 						<p>
 							I love JavaScript, my cats (and wife) and solving
-							problems with a cleverly written piece of code. I've worked as a
+							problems with a cleverly written piece of code. In my previous life I've worked as a
 							data analyst, programmer and electronics technician. This website is just a
                             small sample of things I have worked on, mostly in my free
 							time, please contact me if you'd like to talk.
 						</p>
 					</div>
-					<div class="col-6">
+					<div class="col-6 contact">
                         <a class="anchor" id="contact"></a>
 						<h3>Contact</h3>
 						<div class="grid">
 							<div class="row">
 								<div class="col-6">
-									<h4>Email:</h4>
+									<h4>Email</h4>
 										<p><span class="codedirection">oc.zepolaotrebla@em</span></p>
-									<h4>Codepen:</h4>
+									<h4>Codepen</h4>
 										<p><a href="http://codepen.io/albertalopez/">http://codepen.io/albertalopez/</a></p>
 								</div>
 								<div class="col-6">
-									<h4>Github:</h4>
+									<h4>Github</h4>
 										<p><a target="_blank" href="https://github.com/AlbertoALopez">https://github.com/AlbertoALopez</a></p>
-									<h4>Resume:</h4>
+									<h4>Resume</h4>
 									<p><a target="_blank" href="resume.html">JSON</a></p>
 									<p><a target="_blank" href="alberto-lopez-resume.pdf">PDF</a></p>
 								</div>
@@ -226,11 +228,11 @@
 
 	</div>
 	<!-- scripts -->
-	<script src="./assets/bundle.js"></script>
-	<!-- <script src="manifest.js"></script>
+	<!-- <script src="./assets/bundle.js"></script> -->
+	<script src="manifest.js"></script>
 	<script src="vendor.js"></script>
-	<script src="app.js"></script> -->
-	<script src="https://use.typekit.net/ghn2xyx.js"></script>
+	<script src="app.js"></script>
+	<!-- <script src="https://use.typekit.net/ghn2xyx.js"></script> -->
 	<!-- <script>try{Typekit.load({ async: false });}catch(e){}</script> -->
 </body>
 </html>

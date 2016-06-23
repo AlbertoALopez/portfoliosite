@@ -15,9 +15,9 @@ const PATHS = {
 
 const common = {
 	entry: {
-		app: PATHS.app,
-		// resume: './app/resume.js'
-		style: "./style/main.scss"
+		app: ["./app/index.js"],
+		resume: './app/resume.js'
+		// style: "./style/main.scss"
 	},
 	resolve: {
 		extensions: ['', '.js', '.scss']
@@ -33,7 +33,7 @@ const common = {
 				test: /\.js?$/,
 				loaders: ['babel'],
 				include: PATHS.app
-			}
+			},
     ]
 	},
 	sassLoader: {
