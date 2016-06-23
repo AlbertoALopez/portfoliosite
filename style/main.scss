@@ -7,26 +7,27 @@
 @import "./_dropdown.scss";
 @import "./_shadow-mixin.scss";
 @import "./_colors.scss";
+@import "./_gradient-background.scss";
 
 /* =================================
   Base Element Styles
 ==================================== */
 
 * {
-	-webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
 	width: 100%;
-	font-family: "pt-sans", sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
-h1, h2, h3 {
-	font-family: "ff-nuvo-web-pro", sans-serif;
+h1, h2, h3, h4 {
+	font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -67,6 +68,8 @@ h1 {
 	box-shadow: 0 1px 4px rgba(0,0,0,.4);
 	width: 100%;
 	height: 70px;
+    position: fixed;
+    top: 0;
 }
 
 .nav {
@@ -152,6 +155,17 @@ span.codedirection {
 }
 
 /* =================================
+  Href anchor fix
+==================================== */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -65px;
+    visibility: hidden;
+}
+
+/* =================================
   Clearfix
 ==================================== */
 
@@ -212,12 +226,6 @@ Media Queries
 }
 
 @media (min-width: 769px) {
-	.main-header {
-	  position: fixed;
-	  width: 100%;
-	  top: 0;
-	}
-
 	.content {
 		padding-top: 70px;
 	}
@@ -230,10 +238,6 @@ Media Queries
 	.col {
 		margin-top: 20px;
 		padding-left: 20px;
-	}
-
-	.intro {
-		float: left;
 	}
 }
 

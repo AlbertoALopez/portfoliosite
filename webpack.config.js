@@ -16,15 +16,15 @@ const PATHS = {
 const common = {
 	entry: {
 		app: PATHS.app,
-		resume: './app/resume.js'
-		// style: "./style/main.scss"
+		// resume: './app/resume.js'
+		style: "./style/main.scss"
 	},
 	resolve: {
 		extensions: ['', '.js', '.scss']
 	},
 	output: {
-		path: path.join(__dirname + 'build'),
-	 	publicPath: '/build',
+		path: path.resolve(__dirname + 'build'),
+	 	publicPath: '/assets/',
 		filename: 'bundle.js'
 	},
 	module: {
@@ -39,6 +39,9 @@ const common = {
 	sassLoader: {
 		includePaths: [path.resolve(__dirname, 'node_modules')]
 	},
+    compassLoader: {
+        includePaths: [path.resolve(__dirname, "./node_modules/compass-mixins/lib")]
+    }
 	// plugins: [
 	// 	new CleanPlugin([PATHS.build])
 	// ]
