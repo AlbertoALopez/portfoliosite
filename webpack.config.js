@@ -10,14 +10,15 @@ process.env.BABEL_ENV = TARGET;
 const PATHS = {
 	app: path.join(__dirname, 'app'),
 	build: path.join(__dirname, 'build'),
-	style: path.join(__dirname, 'style')
+	style: path.join(__dirname, 'style'),
+    images: path.join(__dirname, 'build/img')
 };
 
 const common = {
 	entry: {
 		app: ["./app/index.js"],
-		resume: './app/resume.js'
-		// style: "./style/main.scss"
+		// resume: './app/resume.js'
+		style: "./style/main.scss"
 	},
 	resolve: {
 		extensions: ['', '.js', '.scss']
@@ -34,6 +35,11 @@ const common = {
 				loaders: ['babel'],
 				include: PATHS.app
 			},
+            {
+                test: /\.(jpeg|jpg|png)$/,
+                loader: 'file?name=[path][name].[hash].[ext]',
+                include: PATHS.images
+            }
     ]
 	},
 	sassLoader: {

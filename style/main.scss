@@ -7,8 +7,18 @@
 @import "./_dropdown.scss";
 @import "./_shadow-mixin.scss";
 @import "./_colors.scss";
-@import "./_gradient-background.scss";
+@import "./_intro-background.scss";
 @import "./_icon-animation.scss";
+@import "./_header-animation.scss";
+
+@include keyframes(dropHeader) {
+    0% {
+            transform: translateY(-40px);
+        }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /* =================================
   Base Element Styles
@@ -24,12 +34,12 @@
 html,
 body {
 	width: 100%;
-	font-family: "Raleway", sans-serif;
-    font-size: 17px;
+	font-family: "Open Sans", sans-serif;
+    // font-size: 17px;
 }
 
 h1, h2, h3, h4 {
-	font-family: "Roboto", sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -42,11 +52,7 @@ li {
 }
 
 h1 {
-	font-size: 24px;
-}
-
-.wf-loading {
-	visibility: hidden;
+	font-size: 26px;
 }
 
 /* =================================
@@ -76,6 +82,9 @@ h1 {
     position: fixed;
     top: 0;
     z-index: 2;
+
+    // Dropdown animation
+    @include animation('dropHeader 1 ease-in 0.7s');
 }
 
 .nav {
@@ -110,10 +119,6 @@ h1 {
 .contact,
 .portfolio {
 	padding: 0 20px 0 20px;
-}
-
-.about {
-
 }
 
 .contact {
@@ -202,6 +207,9 @@ Media Queries
 ==================================== */
 
 @media (max-width: 350px) {
+    .name {
+		font-size: 17px !important;
+	}
 	.nav {
 		h3 {
 			visibility: hidden;
@@ -215,15 +223,15 @@ Media Queries
 }
 
 @media (max-width: 410px) {
-	.name {
-		font-size: 17px;
-	}
 	.nav {
 		padding-right: 25px;
 	}
 }
 
 @media (max-width: 450px) {
+    .name {
+		font-size: 19px;
+	}
 	.nav {
 		h3 {
 			margin-right: -20px;

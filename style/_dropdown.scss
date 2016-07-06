@@ -14,18 +14,16 @@ ul li {
   display: inline-block;
   margin-right: -4px;
   position: relative;
-  padding: 15px 20px;
-  background: #fff;
+  padding: 12px 20px;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-}
-
-ul li:hover {
-  background: $dropdown-background;
+  &:hover {
+    background: $dropdown-background;
+  }
 }
 
 ul li ul {
@@ -46,6 +44,7 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
+
 ul li ul li {
   background: $dropdown-background;
   display: block;
