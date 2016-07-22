@@ -9,15 +9,12 @@ const PATHS = {
 	app: path.join(__dirname, 'app/js'),
 	build: path.join(__dirname, 'build'),
 	style: path.join(__dirname, 'app/style/main.scss'),
-    // images: path.join(__dirname, 'app/img')
 };
 
 // Common config
 const common = {
 	entry: {
 		app: PATHS.app,
-		// resume: './app/js/resume.js',
-		// style: PATHS.style
 	},
 	resolve: {
 		extensions: ['', '.js', '.scss']
@@ -36,7 +33,6 @@ const common = {
             {
                 test: /\.(jpeg|jpg|png)$/,
                 loader: 'url?limit=25000&name=../img/[name].[ext]',
-                // include: PATHS.images
             }
         ]
 	},
