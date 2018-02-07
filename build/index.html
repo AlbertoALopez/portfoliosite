@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alberto A Lopez</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Work+Sans" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="style/style.css"> -->
+	<!-- <link rel="stylesheet" href="style/app.css"> -->
 </head>
 <body>
 	<div id="wrapper">
@@ -56,7 +57,6 @@
 
           </div>
           <a class="scroll intro-button" id="intro-link" href="#portfolio">See more</a>
-
         </section>
 
 		<section class="content">
@@ -91,12 +91,12 @@
 			<div class="grid">
 				<div class="row">
 					<div class="col-12">
-						<h3>Projects</h3>
+						<h3>Dynamic Projects</h3>
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 portfolio-img">
-									<a href="#modal-1" rel="modal:open"><img src="img/tanda.jpg"/></a>
-									<h3 class="img-description">Tahirih and Alberto</h3>
+									<a href="#modal-1" rel="modal:open"><img src="img/polling.jpg"/></a>
+									<h3 class="img-description">Polling</h3>
 								</div>
 								<div class="col-6 portfolio-img">
                                     <a href="#modal-2" rel="modal:open"><img src="img/blog.jpg" /></a>
@@ -106,11 +106,12 @@
 						</div>
 					</div>
 					<div class="col-12">
+						<h3>Static Projects</h3>
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 portfolio-img">
-                                    <a href="#modal-3" rel="modal:open"><img src="img/kanban.jpg" /></a>
-									<h3 class="img-description">Kanban App</h3>
+									<a href="#modal-3" rel="modal:open"><img src="img/tanda.jpg"/></a>
+									<h3 class="img-description">Tahirih and Alberto</h3>
 								</div>
 								<div class="col-6 portfolio-img">
 									<a href="#modal-4" rel="modal:open"><img src="img/twitch.jpg" /></a>
@@ -133,6 +134,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                    	<div class="row">
+                    		<div class="col-6 portfolio-img">
+									<a href="#modal-7" rel="modal:open"><img src="img/kanban.jpg" /></a>
+									<h3 class="img-description">Kanban App</h3>
+							</div>
+						</div>
+                    </div>
 				</div>
 			</div>
 		</section>
@@ -153,15 +162,21 @@
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 modal-column-left">
-									<h3>Tahirih and Alberto</h3>
-									<p>Designed for mobile devices and built using Bootstrap 3.</p>
-									<p><b>Technology</b>: Bootstrap 3, HTML5, CSS3<br></p>
+									<h3>Polling</h3>
+									<p>A full stack app that lets users sign in, create polls, 
+									vote on them, and share them with their friends.</p>
+									<p><b>Technology</b>: React, Material UI, node.js, expressjs, 
+									postgreSQL<br></p>
 									<p><b>Link: </b>
-                                        <a target="_blank" href="http://www.tahirihandalberto.com">http://www.tahirihandalberto.com</a>
+                                        <a target="_blank" href="https://shrouded-fortress-20795.herokuapp.com/">https://shrouded-fortress-20795.herokuapp.com/</a>
+                                    </p>
+                                    <p>
+                                        <b>Github: </b>
+                                        <a target="_blank" href="https://github.com/AlbertoALopez/polling">https://github.com/AlbertoALopez/polling</a>
                                     </p>
 								</div>
 								<div class="col-6 modal-column-right">
-									<img src="img/tanda-large.jpg" />
+									<img src="img/polling-large.jpg" />
 								</div>
 							</div>
 						</div>
@@ -205,22 +220,15 @@
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 modal-column-left">
-									<h3>Kanban App</h3>
-									<p>An app demonstrating a Kanban scheduling system used in lean manufacturing.
-                                       It uses React along with React drag and drop to give a similar experience as Trello.
-                                       Uses LocalStorage API for task persistence.
-                                      </p>
-									<p><b>Technology</b>: React, ES6, CSS (SCSS), Webpack, Flux(Alt)<br></p>
-                                    <p>
-                                        <b>Github: </b>
-                                        <a target="_blank" href="https://github.com/AlbertoALopez/kanbanapp">https://github.com/AlbertoALopez/kanbanapp</a>
-                                    </p>
-									<p><b>Live site: </b>
-                                        <a target="_blank" href="http://albertoalopez.github.io/kanbanapp/">http://albertoalopez.github.io/kanbanapp/</a>
+									<h3>Tahirih and Alberto</h3>
+									<p>Designed for mobile devices and built using Bootstrap 3.</p>
+									<p><b>Technology</b>: Bootstrap 3, HTML5, CSS3<br></p>
+									<p><b>Link: </b>
+                                        <a target="_blank" href="http://www.tahirihandalberto.com">http://www.tahirihandalberto.com</a>
                                     </p>
 								</div>
 								<div class="col-6 modal-column-right">
-									<img src="img/kanban-large.jpg" />
+									<img src="img/tanda-large.jpg" />
 								</div>
 							</div>
 						</div>
@@ -309,6 +317,35 @@
 				</div>
 			</div>
 
+			<div id="modal-7" style="display:none" class="modal-hider">
+				<div class="modal-item">
+					<div class="modal-container">
+						<div class="grid">
+							<div class="row">
+								<div class="col-6 modal-column-left">
+									<h3>Kanban App</h3>
+									<p>An app demonstrating a Kanban scheduling system used in lean manufacturing.
+                                       It uses React along with React drag and drop to give a similar experience as Trello.
+                                       Uses LocalStorage API for task persistence.
+                                      </p>
+									<p><b>Technology</b>: React, ES6, CSS (SCSS), Webpack, Flux(Alt)<br></p>
+                                    <p>
+                                        <b>Github: </b>
+                                        <a target="_blank" href="https://github.com/AlbertoALopez/kanbanapp">https://github.com/AlbertoALopez/kanbanapp</a>
+                                    </p>
+									<p><b>Live site: </b>
+                                        <a target="_blank" href="http://albertoalopez.github.io/kanbanapp/">http://albertoalopez.github.io/kanbanapp/</a>
+                                    </p>
+								</div>
+								<div class="col-6 modal-column-right">
+									<img src="img/kanban-large.jpg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</section>
 
 	</div>
@@ -317,6 +354,6 @@
 	<script src="js/manifest.js"></script>
 	<script src="js/vendor.js"></script>
 	<script src="js/app.js"></script>
-    <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
+  <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
 </body>
 </html>
