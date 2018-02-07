@@ -34,12 +34,12 @@
 html,
 body {
 	width: 100%;
-	font-family: "Open Sans", sans-serif;
-    // font-size: 17px;
+	font-family: "Karla", sans-serif;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -79,12 +79,11 @@ h1 {
 	box-shadow: 0 1px 4px rgba(0,0,0,.4);
 	width: 100%;
 	height: 70px;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-
-    // Dropdown animation
-    @include animation('dropHeader 1 ease-in 0.7s');
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  // Dropdown animation
+  @include animation('dropHeader 1 ease-in 0.7s');
 }
 
 .nav {
@@ -208,7 +207,7 @@ Media Queries
 ==================================== */
 
 @media (max-width: 350px) {
-    .name {
+  .name {
 		font-size: 17px !important;
 	}
 	.nav {
