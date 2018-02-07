@@ -89,7 +89,7 @@ if (TARGET === 'build' || TARGET === 'stats') {
 	module.exports = merge(common, {
         entry: {
     		resume: './app/js/resume.js',
-    		style: PATHS.style
+    		// style: PATHS.style
     	},
 		output: {
 			path: PATHS.build,
