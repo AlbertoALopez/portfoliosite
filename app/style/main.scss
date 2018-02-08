@@ -244,10 +244,13 @@ Media Queries
 	.nav {
 		padding-right: 25px;
 	}
+  .contact {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 450px) {
-    .name {
+  .name {
 		font-size: 19px;
 	}
 	.nav {
