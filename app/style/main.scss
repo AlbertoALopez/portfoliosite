@@ -122,13 +122,19 @@ h1 {
 	padding: 0 20px 0 20px;
 }
 
+.content {
+  // background-color: black;
+  padding: 0 20px 0 20px;
+
+}
+
 .contact {
-    h4 {
-       margin: 0 auto;
-    }
-    a {
-       text-decoration: underline;
-    }
+  h4 {
+   margin: 0 auto;
+  }
+  a {
+   text-decoration: underline;
+  }
 }
 
 .portfolio {

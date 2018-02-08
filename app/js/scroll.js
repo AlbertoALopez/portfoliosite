@@ -38,6 +38,7 @@ export default function scroll() {
                     var travelled = window.pageYOffset;
                     if ( travelled <= (endLocation || 0) ) {
                         clearInterval(runAnimation);
+                        console.log('done');
                     }
                 };
             }
