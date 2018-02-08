@@ -3,11 +3,6 @@
 ==================================== */
 
 @import "../node_modules/compass-mixins/lib/_compass.scss";
-@import "./_header-animation.scss";
-
-@include keyframes(dropHeader) {
-
-}
 
 .intro-background {
     width: 100vw;
@@ -18,7 +13,6 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 15vh;
-        @include animation('dropHeader 1 ease-in 0.7s');
         .intro-hero {
             color: black;
             letter-spacing: 0.2px;
@@ -55,8 +49,8 @@
         border: 1px solid #fff;
         border-radius: 40px;
         text-align: center;
-        -webkit-transition: all .8s;
-        transition: all .8s;
+        // -webkit-transition: all .8s;
+        // transition: all .8s;
         &:hover {
             width: 200px;
         }

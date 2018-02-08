@@ -10,6 +10,7 @@
 @import "./_icon-animation.scss";
 @import "./_header-animation.scss";
 @import "./button-animation.scss";
+@import "./fadein-animation.scss";
 
 @include keyframes(dropHeader) {
     0% {
@@ -67,9 +68,9 @@ h1 {
 	margin-left: 10px;
 	display: inline-block;
     .scroll {
-        transition: all .3s;
+        // transition: all .3s;
         &:hover {
-            color: white !important;
+            // color: white !important;
         }
     }
 
@@ -85,7 +86,7 @@ h1 {
   z-index: 2;
   background-color: $dropdown-background;
   // Dropdown animation
-  @include animation('dropHeader 1 ease-in 0.7s');
+  // @include animation('dropHeader 1 ease-in 0.7s');
 }
 
 .nav {
