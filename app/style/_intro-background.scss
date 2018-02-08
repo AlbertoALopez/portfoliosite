@@ -26,8 +26,9 @@
         @include animation('dropHeader 1 ease-in 0.7s');
         .intro-text {
             color: black;
-            font-size: 35px;
-            line-height: 28px;
+            // max-width: 50vw;
+            font-size: 2.5rem;
+            line-height: 1.5;
             letter-spacing: 0.2px;
             text-align: left;
             strong {
@@ -73,7 +74,7 @@
 }
 
 @media (max-width: 350px) {
-    
+
 }
 
 @media (max-width: 410px) {
