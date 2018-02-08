@@ -29,7 +29,7 @@
               I focus on modern tooling, using React and NodeJS to create scalable and efficient applications for web and iOS/Android
             </p>
             <p>
-              Have a question regarding a project? Please contact me through the info below.
+              Have a question regarding a project? Please contact me through the info below
             </p>
 
           </div>
@@ -66,60 +66,64 @@
 		<section class="portfolio">
       <a class="anchor" id="portfolio"></a>
 			<div class="grid">
+
 				<div class="row">
 					<div class="col-12">
 						<h3>Dynamic Projects</h3>
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 portfolio-img">
-									<a href="#modal-1" rel="modal:open"><img src="img/polling.jpg"/></a>
+									<a href="#modal-1" data-modal-open><img src="img/polling.jpg"/></a>
 									<h3 class="img-description">Polling</h3>
 								</div>
 								<div class="col-6 portfolio-img">
-                                    <a href="#modal-2" rel="modal:open"><img src="img/blog.jpg" /></a>
+                  <a href="#modal-2" data-modal-open><img src="img/blog.jpg" /></a>
 									<h3 class="img-description">Multi user blog/cms</h3>
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-12">
 						<h3>Static Projects</h3>
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 portfolio-img">
-									<a href="#modal-3" rel="modal:open"><img src="img/tanda.jpg"/></a>
+									<a href="#modal-3" data-modal-open><img src="img/tanda.jpg"/></a>
 									<h3 class="img-description">Tahirih and Alberto</h3>
 								</div>
 								<div class="col-6 portfolio-img">
-									<a href="#modal-4" rel="modal:open"><img src="img/twitch.jpg" /></a>
+									<a href="#modal-4" data-modal-open><img src="img/twitch.jpg" /></a>
 									<h3 class="img-description">Twitch stream viewer</h3>
 								</div>
 							</div>
 						</div>
 					</div>
-                    <div class="col-12">
-                        <div class="grid">
-                            <div class="row">
-                                <div class="col-6 portfolio-img">
-									<a href="#modal-5" rel="modal:open"><img src="img/wikipedia.jpg" /></a>
+
+          <div class="col-12">
+            <div class="grid">
+              <div class="row">
+                <div class="col-6 portfolio-img">
+									<a href="#modal-5" data-modal-open><img src="img/wikipedia.jpg" /></a>
 									<h3 class="img-description">Wikipedia Search</h3>
 								</div>
 								<div class="col-6 portfolio-img">
-									<a href="#modal-6" rel="modal:open"><img src="img/pomodoro.jpg" /></a>
+									<a href="#modal-6" data-modal-open><img src="img/pomodoro.jpg" /></a>
 									<h3 class="img-description">Pomodoro Timer</h3>
 								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                    	<div class="row">
-                    		<div class="col-6 portfolio-img">
-									<a href="#modal-7" rel="modal:open"><img src="img/kanban.jpg" /></a>
-									<h3 class="img-description">Kanban App</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+          	<div class="row">
+          		<div class="col-6 portfolio-img">
+								<a href="#modal-7" data-modal-open><img src="img/kanban.jpg" /></a>
+								<h3 class="img-description">Kanban App</h3>
 							</div>
 						</div>
-                    </div>
-				</div>
+          </div>
+  			</div>
 			</div>
 		</section>
 
@@ -127,9 +131,8 @@
 
 			<div class="modal">
 			  <div class="modal-inner">
-			    <a rel="modal:close">Close</a>
-			    <div class="modal-content">
-					</div>
+			    <a class="modal-close" data-modal-close>Close</a>
+			    <div class="modal-content"></div>
 			  </div>
 			</div>
 
@@ -144,13 +147,14 @@
 									vote on them, and share them with their friends.</p>
 									<p><b>Technology</b>: React, Material UI, node.js, expressjs, 
 									postgreSQL<br></p>
-									<p><b>Link: </b>
-                                        <a target="_blank" href="https://shrouded-fortress-20795.herokuapp.com/">https://shrouded-fortress-20795.herokuapp.com/</a>
-                                    </p>
-                                    <p>
-                                        <b>Github: </b>
-                                        <a target="_blank" href="https://github.com/AlbertoALopez/polling">https://github.com/AlbertoALopez/polling</a>
-                                    </p>
+									<p>
+                    <b>Link: </b>
+                    <a target="_blank" href="https://shrouded-fortress-20795.herokuapp.com/">https://shrouded-fortress-20795.herokuapp.com/</a>
+                  </p>
+                  <p>
+                    <b>Github: </b>
+                    <a target="_blank" href="https://github.com/AlbertoALopez/polling">https://github.com/AlbertoALopez/polling</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
 									<img src="img/polling-large.jpg" />
@@ -161,26 +165,25 @@
 				</div>
 			</div>
 
-            <div id="modal-2" style="display:none" class="modal-hider">
+      <div id="modal-2" style="display:none" class="modal-hider">
 				<div class="modal-item">
 					<div class="modal-container">
 						<div class="grid">
 							<div class="row">
 								<div class="col-6 modal-column-left">
 									<h3>Multi user blog</h3>
-									<p>A multi user blog with accounts, implemented on Google App Engine.
-                                        Uses webapp2 framework for backend, and Bootstrap 3 on the front along with jinja2 templating.
-                                        Stores user accounts with Google Cloud Datastore.
-                                    </p>
+									<p>
+                    A multi user blog with accounts, implemented on Google App Engine. Uses webapp2 framework for backend, and Bootstrap 3 on the front along with jinja2 templating. Stores user accounts with Google Cloud Datastore.
+                  </p>
 									<p><b>Technology</b>: Python, HTML5, CSS3, jQuery<br></p>
 									<p>
-                                        <b>Github: </b>
-                                        <a target="_blank" href="https://github.com/AlbertoALopez/gae-blog">https://github.com/AlbertoALopez/gae-blog</a>
-                                    </p>
-                                    <p>
-                                        <b>Live site: </b>
-                                        <a target="_blank" href="http://first-strength-135202.appspot.com/">http://first-strength-135202.appspot.com/</a>
-                                    </p>
+                    <b>Github: </b>
+                    <a target="_blank" href="https://github.com/AlbertoALopez/gae-blog">https://github.com/AlbertoALopez/gae-blog</a>
+                  </p>
+                  <p>
+                    <b>Live site: </b>
+                    <a target="_blank" href="http://first-strength-135202.appspot.com/">http://first-strength-135202.appspot.com/</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
 									<img src="img/blog-large.jpg" />
@@ -200,9 +203,10 @@
 									<h3>Tahirih and Alberto</h3>
 									<p>Designed for mobile devices and built using Bootstrap 3.</p>
 									<p><b>Technology</b>: Bootstrap 3, HTML5, CSS3<br></p>
-									<p><b>Link: </b>
-                                        <a target="_blank" href="http://www.tahirihandalberto.com">http://www.tahirihandalberto.com</a>
-                                    </p>
+									<p>
+                    <b>Link: </b>
+                    <a target="_blank" href="http://www.tahirihandalberto.com">http://www.tahirihandalberto.com</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
 									<img src="img/tanda-large.jpg" />
@@ -222,17 +226,18 @@
 									<h3>Twitch Stream Viewer</h3>
 									<p>This project parses the Twitch JSON API and renders a list of users using React Bootstrap.</p>
 									<p><b>Technology</b>: React, React-Bootstrap, HTML5, CSS (SCSS)<br></p>
-									<p><b>Link: </b>
-                                        <a target="_blank" href="http://codepen.io/albertalopez/pen/VabNEv">http://codepen.io/albertalopez/pen/VabNEv</a>
-                                    </p>
+									<p>
+                    <b>Link: </b>
+                    <a target="_blank" href="http://codepen.io/albertalopez/pen/VabNEv">http://codepen.io/albertalopez/pen/VabNEv</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
 									<p data-height="400"
-                                       data-theme-id="dark"
-                                       data-slug-hash="VabNEv"
-                                       data-default-tab="js" data-user="albertalopez"
-                                       data-embed-version="2" data-preview="true"
-                                       class="codepen">See the Pen <a href="http://codepen.io/albertalopez/pen/VabNEv/">Twitch Stream Viewer</a> by Alberto Lopez (<a href="http://codepen.io/albertalopez">@albertalopez</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                     data-theme-id="dark"
+                     data-slug-hash="VabNEv"
+                     data-default-tab="js" data-user="albertalopez"
+                     data-embed-version="2" data-preview="true"
+                     class="codepen">See the Pen <a href="http://codepen.io/albertalopez/pen/VabNEv/">Twitch Stream Viewer</a> by Alberto Lopez (<a href="http://codepen.io/albertalopez">@albertalopez</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 								</div>
 							</div>
 						</div>
@@ -248,20 +253,21 @@
 								<div class="col-6 modal-column-left">
 									<h3>Wikipedia Search</h3>
 									<p>
-                                        This project was built to practice form validation and parsing with React.
-                                        Takes user input and uses an AJAX request to display results from Wikipedia's search API.
-                                    </p>
+                    This project was built to practice form validation and parsing with React. Takes user input and uses an AJAX request to display results from Wikipedia's search API.
+                  </p>
 									<p><b>Technology</b>: React, React-Bootstrap, HTML5, CSS (SCSS)<br></p>
-									<p><b>Link: </b>
-                                        <a target="_blank" href="http://codepen.io/albertalopez/full/VaKxEx/">http://codepen.io/albertalopez/full/VaKxEx/</a>
-                                    </p>
+									<p>
+                    <b>Link: </b>
+                    <a target="_blank" href="http://codepen.io/albertalopez/full/VaKxEx/">http://codepen.io/albertalopez/full/VaKxEx/</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
 									<p data-height="400"
-                                       data-theme-id="dark"
-                                       data-slug-hash="VaKxEx" data-default-tab="js"
-                                       data-user="albertalopez" data-embed-version="2"
-                                       data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/albertalopez/pen/VaKxEx/">Wikipedia Viewer</a> by Alberto Lopez (<a href="http://codepen.io/albertalopez">@albertalopez</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                     data-theme-id="dark"
+                     data-slug-hash="VaKxEx" data-default-tab="js"
+                     data-user="albertalopez" data-embed-version="2"
+                     data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/albertalopez/pen/VaKxEx/">Wikipedia Viewer</a> by Alberto Lopez (<a href="http://codepen.io/albertalopez">@albertalopez</a>) on <a href="http://codepen.io">CodePen</a>.
+                   </p>
 								</div>
 							</div>
 						</div>
@@ -269,7 +275,7 @@
 				</div>
 			</div>
 
-            <div id="modal-6" style="display:none" class="modal-hider">
+      <div id="modal-6" style="display:none" class="modal-hider">
 				<div class="modal-item">
 					<div class="modal-container">
 						<div class="grid">
@@ -278,15 +284,19 @@
 									<h3>Pomodoro Timer</h3>
 									<p>A pomodoro is a productivity concept that breaks work periods into 25 minute periods with 5 minute breaks in between. This timer is customizable and coded in vanilla JavaScript. </p>
 									<p><b>Technology</b>: HTML5, CSS (SCSS), JavaScript<br></p>
-									<p><b>Link: </b><a target="_blank" href="http://s.codepen.io/albertalopez/debug/PzzMyG">http://s.codepen.io/albertalopez/debug/PzzMyG</a></p>
+									<p>
+                    <b>Link: </b>
+                    <a target="_blank" href="http://s.codepen.io/albertalopez/debug/PzzMyG">http://s.codepen.io/albertalopez/debug/PzzMyG</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
-                                    <p data-height="400"
-                                       data-theme-id="24191"
-                                       data-slug-hash="PzzMyG"
-                                       data-default-tab="js,result"
-                                       data-user="albertalopez" data-embed-version="2"
-                                       data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/albertalopez/pen/PzzMyG/">Pomodoro clock</a> by Alberto Lopez (<a href="http://codepen.io/albertalopez">@albertalopez</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                  <p data-height="400"
+                     data-theme-id="24191"
+                     data-slug-hash="PzzMyG"
+                     data-default-tab="js,result"
+                     data-user="albertalopez" data-embed-version="2"
+                     data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/albertalopez/pen/PzzMyG/">Pomodoro clock</a> by Alberto Lopez (<a href="http://codepen.io/albertalopez">@albertalopez</a>) on <a href="http://codepen.io">CodePen</a>.
+                   </p>
 								</div>
 							</div>
 						</div>
@@ -301,18 +311,18 @@
 							<div class="row">
 								<div class="col-6 modal-column-left">
 									<h3>Kanban App</h3>
-									<p>An app demonstrating a Kanban scheduling system used in lean manufacturing.
-                                       It uses React along with React drag and drop to give a similar experience as Trello.
-                                       Uses LocalStorage API for task persistence.
-                                      </p>
+									<p>
+                    An app demonstrating a Kanban scheduling system used in lean manufacturing. It uses React along with React drag and drop to give a similar experience as Trello. Uses LocalStorage API for task persistence.
+                  </p>
 									<p><b>Technology</b>: React, ES6, CSS (SCSS), Webpack, Flux(Alt)<br></p>
-                                    <p>
-                                        <b>Github: </b>
-                                        <a target="_blank" href="https://github.com/AlbertoALopez/kanbanapp">https://github.com/AlbertoALopez/kanbanapp</a>
-                                    </p>
-									<p><b>Live site: </b>
-                                        <a target="_blank" href="http://albertoalopez.github.io/kanbanapp/">http://albertoalopez.github.io/kanbanapp/</a>
-                                    </p>
+                  <p>
+                    <b>Github: </b>
+                    <a target="_blank" href="https://github.com/AlbertoALopez/kanbanapp">https://github.com/AlbertoALopez/kanbanapp</a>
+                  </p>
+									<p>
+                    <b>Live site: </b>
+                    <a target="_blank" href="http://albertoalopez.github.io/kanbanapp/">http://albertoalopez.github.io/kanbanapp/</a>
+                  </p>
 								</div>
 								<div class="col-6 modal-column-right">
 									<img src="img/kanban-large.jpg" />
@@ -328,9 +338,9 @@
 	</div>
 	<!-- scripts -->
 	<script src="bundle.js"></script>
-	<script src="js/manifest.js"></script>
-	<script src="js/vendor.js"></script>
-	<script src="js/app.js"></script>
+	<!-- <script src="js/manifest.js"></script> -->
+	<!-- <script src="js/vendor.js"></script> -->
+	<!-- <script src="js/app.js"></script> -->
   <script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
 </body>
 </html>

@@ -72,7 +72,7 @@
   transition: opacity 0.2s, transform 0.2s;
 }
 
-a[rel="modal:close"] {
+.modal-close {
   position: absolute;
   z-index: 2;
   right: 0;
