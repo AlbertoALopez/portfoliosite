@@ -8,7 +8,6 @@
 @import "./_colors.scss";
 @import "./_intro-background.scss";
 @import "./_icon-animation.scss";
-@import "./_header-animation.scss";
 @import "./button-animation.scss";
 @import "./fadein-animation.scss";
 
@@ -39,9 +38,13 @@ body {
   background-color: #fff;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'Work Sans', sans-serif;
   color: $header-color;
+}
+
+h4 {
+  font-family: 'Work Sans', sans-serif;
 }
 
 a {
