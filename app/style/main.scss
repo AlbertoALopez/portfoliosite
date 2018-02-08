@@ -116,16 +116,14 @@ h1 {
 
 /* Body */
 
-.about,
-.contact,
-.portfolio,
-.skills {
+.portfolio, {
 	padding: 0 20px 0 20px;
 }
 
 .content {
-  // background-color: black;
-  padding: 0 20px 0 20px;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
