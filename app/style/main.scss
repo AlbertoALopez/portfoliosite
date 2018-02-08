@@ -4,7 +4,6 @@
 
 @import "./framework.scss";
 @import "./_modal.scss";
-@import "./_dropdown.scss";
 @import "./_shadow-mixin.scss";
 @import "./_colors.scss";
 @import "./_intro-background.scss";
@@ -83,6 +82,7 @@ h1 {
   position: fixed;
   top: 0;
   z-index: 2;
+  background-color: $dropdown-background;
   // Dropdown animation
   @include animation('dropHeader 1 ease-in 0.7s');
 }
@@ -118,7 +118,8 @@ h1 {
 
 .about,
 .contact,
-.portfolio {
+.portfolio,
+.skills {
 	padding: 0 20px 0 20px;
 }
 
@@ -134,6 +135,19 @@ h1 {
   }
   a {
    text-decoration: underline;
+  }
+}
+
+.skills {
+  h4 {
+    margin: 0 auto;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      text-align: left;
+      font-weight: light;
+    }
   }
 }
 
@@ -163,10 +177,7 @@ h1 {
   Color styles
 ==================================== */
 
-.main-header,
-.main-header ul li {
-	background-color: $dropdown-background;
-}
+
 
 /* =================================
 	Email redirection
