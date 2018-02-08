@@ -24,9 +24,8 @@
         margin-right: auto;
         padding-top: 15vh;
         @include animation('dropHeader 1 ease-in 0.7s');
-        .intro-text {
+        .intro-hero {
             color: black;
-            // max-width: 50vw;
             font-size: 2.5rem;
             line-height: 1.5;
             letter-spacing: 0.2px;
@@ -41,6 +40,9 @@
         .intro-description {
             font-size: 28px;
             text-align: left;
+        }
+        .intro-question {
+            font-size: 22px;
         }
         #intro-img {
             display: block;
