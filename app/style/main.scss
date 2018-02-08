@@ -9,6 +9,7 @@
 @import "./_intro-background.scss";
 @import "./_icon-animation.scss";
 @import "./_header-animation.scss";
+@import "./button-animation.scss";
 
 @include keyframes(dropHeader) {
     0% {
