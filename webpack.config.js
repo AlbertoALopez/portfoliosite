@@ -87,10 +87,6 @@ if (TARGET === 'start' || !TARGET) {
 // Build config
 if (TARGET === 'build' || TARGET === 'stats') {
 	module.exports = merge(common, {
-        entry: {
-    		resume: './app/js/resume.js',
-    		// style: PATHS.style
-    	},
 		output: {
 			path: PATHS.build,
 			filename: '[name].js',
