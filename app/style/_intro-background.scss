@@ -5,14 +5,14 @@
 @import "../node_modules/compass-mixins/lib/_compass.scss";
 
 .intro-background {
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     .intro {
-        display: block;
+        display: inline-block;
         width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 15vh;
+        height: 100vh;
+        text-align: left;
         .intro-hero {
             color: black;
             letter-spacing: 0.2px;
@@ -58,12 +58,16 @@
 }
 
 @media screen and (min-width: 360px) {
+    .intro {
+        padding-top: 15vh;
+    }
     .intro-hero {
         font-size: 1.5rem;
         line-height: 1.5;
     }
     .intro-description {
         font-size: 18px;
+        margin-top: 25px;
     }
     .intro-question {
         font-size: 16px;
@@ -71,6 +75,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .intro {
+        padding-top: 15vh;
+    }
     .intro-hero {
         font-size: 2.5rem;
         line-height: 1.5;
